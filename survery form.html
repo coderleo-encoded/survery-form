@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="test.css">
+    <title>Survery Form</title>
+</head>
+
+<!-- rename file once done everything (html, css, js) -->
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <h4 id="errorText"></h4>
+
+        <form id="surveyForm">                                              <!-- form method = "GET" is DEFAULT; use "POST" for security of passwords, etc. --> 
+            <label for="name">Name: </label><br>                            <!-- for = "name" maps id = "name" for cursor accessibility -->
+            <input type="text" name="name" id="name" required><br>          <!-- name = "name" assigns the variable name sent to server / field name used in CSV file -->
+
+            <label for="age">Age: </label><br>
+            <input type="number" name="age" id="age" required><br>
+
+            <label> Favorite Type of Sport </label><br>
+
+            <input type="radio" name="type" id="indoor" value="Indoor" required>            <!-- type = Indoor --> 
+            <label for="indoor"> Indoor </label><br>
+
+            <input type="radio" name="type" id="outdoor" value="Outdoor" required>          <!-- type = Outdoor --> 
+            <label for="outdoor"> Outdoor </label><br>
+
+            <input type="radio" name="type" id="both" value="Both" required>                <!-- type = Both --> 
+            <label for="both"> Both </label><br>
+
+            <label for="fav-sport-watch">Favorite Sport to Watch: </label><br>
+            <input type="text" name="fav-sport-watch" id="fav-sport-watch" required><br>
+
+            <label for="fav-sport-play">Favorite Sport to Play: </label><br>
+            <input type="text" name="fav-sport-play" id="fav-sport-play" required><br>
+
+            <label for="fav-sport-person">Favorite Sports-person: </label><br>
+            <input type="text" name="fav-sport-person" id="fav-sport-person" required><br>
+
+            <label for="sports-opinion">Your Opinion on Sports (optional): </label><br>
+            <textarea class="fixed-size" name="sports-opinion" id="sports-opinion"></textarea><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
