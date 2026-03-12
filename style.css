@@ -54,3 +54,38 @@ button:hover {
     background-color: #45a049;;
 }
 
+/* JAVASCRIPT CLASSES */
+.error {
+    border: none;
+    border-left: 5px solid red;
+    background-color: #ffe6e6;
+}
+
+input.error:focus {
+    border: none;
+    background-color: #fff;        
+}
+
+.errorText {
+    padding: 1rem;
+    border: 5px solid red;
+    background-color: #ffe6e6;  
+    box-shadow: rgba(149, 157, 165, 0.2)
+        0px 4px 12px;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans",
+        "Lucida Sans Regular",
+        sans-serif;
+}
+
+.successText {
+    padding: 1rem;
+    border: 5px solid green;
+    background-color: #e6ffed;
+    box-shadow: rgba(149, 157, 165, 0.2)
+        0px 4px 12px;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans",
+        "Lucida Sans Regular",
+        sans-serif;
+}

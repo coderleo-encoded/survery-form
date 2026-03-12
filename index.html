@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="survery form.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
     <title>Survery Form</title>
 </head>
 
-<!-- rename file once done everything (html, css, js) -->
 <body>
     <div class="container">
+
         <h1>Survey Form</h1>
+
+        <!-- Error details added with JavaScript -->
         <h4 id="errorText"></h4>
 
-        <form>                                                              <!-- form method = "GET" is DEFAULT; use "POST" for security of passwords, etc. --> 
+        <form id="surveyForm">                                              <!-- form method = "GET" is DEFAULT; use "POST" for security of passwords, etc. --> 
             <label for="name">Name: </label><br>                            <!-- for = "name" maps id = "name" for cursor accessibility -->
             <input type="text" name="name" id="name" required><br>          <!-- name = "name" assigns the variable name sent to server / field name used in CSV file -->
 
